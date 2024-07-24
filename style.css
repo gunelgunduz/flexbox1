@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "A B D"
+        "E C C"
+        "F C C";
+    gap: 5px;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.A { background-color: #00dc96; grid-area: A; }
+.B { background-color: #dc9600; grid-area: B; }
+.D { background-color: #9b00dc; grid-area: D; }
+.E { background-color: #d7009b; grid-area: E; }
+.F { background-color: #0096dc; grid-area: F; }
+.C { background-color: #96dc00; grid-area: C; }
